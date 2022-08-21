@@ -27,7 +27,3 @@ class Count:
             total_counts.update({query: total_count})
         return total_counts
 
-
-if __name__ == '__main__':
-    cel = Count(['cel'], [2022, 8, 15, 0], [2022, 8, 21, 0], 'short squeeze')
-    print(cel.count())
