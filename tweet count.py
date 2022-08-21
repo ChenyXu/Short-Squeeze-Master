@@ -28,5 +28,6 @@ class Count:
         return total_counts
 
 
-cel = Count(['cel'], [2022, 8, 15, 0], [2022, 8, 21, 0], 'short squeeze')
-print(cel.count())
+if __name__ == '__main__':
+    cel = Count(['cel'], [2022, 8, 15, 0], [2022, 8, 21, 0], 'short squeeze')
+    print(cel.count())
