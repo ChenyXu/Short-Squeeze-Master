@@ -16,4 +16,8 @@ def funding_rates():
         info = ftx.fetch_funding_rate(symbols_[i])
         data[symbols_[i]] = round(info['fundingRate'] * 100, 4)
     sorted_data = sorted(data.items(), key=lambda x: x[1], reverse=False)
-    return sorted_data
+    result = []
+    for item in sorted_data:
+        temp = item[0]
+        result.append(temp[:temp.index('/')])
+    return result
